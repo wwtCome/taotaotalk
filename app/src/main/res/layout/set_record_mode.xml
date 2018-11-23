@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+	>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"/>
+
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/record_help"
+        android:textColor="@color/gray_c0" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="10dp"/>
+
+	<LinearLayout
+		android:id="@+id/ll_record_mode_normal"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:gravity="center"
+		android:background="@drawable/selector_transp">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/normal_mode"
+			android:textSize="@dimen/text_size_small"
+			android:layout_gravity="center"/>
+		<ImageView
+			android:id="@+id/iv_record_mode_normal"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:src="@drawable/ble_connected"/>
+	</LinearLayout>
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/divider_gray"/>
+	<LinearLayout
+		android:id="@+id/ll_record_mode_process"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:gravity="center"
+		android:background="@drawable/selector_transp">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/process_mode"
+			android:textSize="@dimen/text_size_small"
+			android:layout_gravity="center"/>
+		<ImageView
+			android:id="@+id/iv_record_mode_process"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:src="@drawable/ble_connected"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="30dp"/>
+
+	<LinearLayout
+		android:id="@+id/ll_fix_3s"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center_vertical"
+		style="@style/BorderlessButton"
+		>
+		<ImageView
+			android:id="@+id/iv_fix_3s"
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:src="@drawable/checkbox_off"
+			/>
+		<TextView
+			android:singleLine="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/fix_3s"
+			android:textSize="@dimen/text_size_small" />
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="个别机型(如小米6)蓝牙无法正常录音，请尝试勾选此项"
+		android:textSize="@dimen/text_size_small2"
+		android:textColor="@color/text_gray"/>
+</LinearLayout>

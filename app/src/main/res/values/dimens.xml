@@ -1,0 +1,65 @@
+<resources>
+
+    <!--登录界面的size.............-->
+
+    <!--XXX对讲标题大小-->
+    <dimen name="title_size">26sp</dimen>
+
+    <!--账号密码左右padding-->
+    <dimen name="padding_left">15dp</dimen>
+    <dimen name="padding_right">15dp</dimen>
+
+    <!--版本号高度-->
+    <dimen name="version_size">20dp</dimen>
+    <!---登录界面的size............-->
+
+
+    <!--用户列表字体-->
+    <dimen name="text_sizt_contact">25dp</dimen>
+
+    <!--首次进入欢迎界面-->
+    <dimen name="text_size_help">30dp</dimen>
+
+    <!--菜单，右边距-->
+    <dimen name="padding_icmore_right">5dp</dimen>
+
+    <!--好友，频道 高度-->
+    <dimen name="con_chan_high">40dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_left_right">15dp</dimen>
+
+    <dimen name="text_size_big">25dp</dimen>
+    <dimen name="text_size_middle">20dp</dimen>
+    <dimen name="text_size_small">18dp</dimen>
+    <dimen name="text_size_small2">15dp</dimen>
+    <dimen name="text_size_small3">18dp</dimen>
+    <dimen name="text_size_small4">10dp</dimen>
+
+    <dimen name="row_height">40dp</dimen>
+    <dimen name="title_height">45dp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+
+
+    <!--好友频道高度-->
+    <dimen name="channelcontact_height">40dp</dimen>
+
+    <!--PTT按钮整行高度-->
+    <dimen name="channel_ptt_height">75dp</dimen>
+
+    <!--频道成员详情 padding大小-->
+    <dimen name="channel_member_padding">5dp</dimen>
+
+    <!--弹窗宽度-->
+    <dimen name="popup_width">125dp</dimen>
+    <!--弹窗的margin-->
+    <dimen name="popup_margin">4dp</dimen>
+    <!--设置弹窗提示栏的高度-->
+    <dimen name="popup_setting">50dp</dimen>
+
+    <!--账号密码输入框高度-->
+    <dimen name="acc_pass_height">40dp</dimen>
+
+</resources>

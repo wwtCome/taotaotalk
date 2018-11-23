@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_match"
+    android:orientation="vertical"
+	android:background="@color/haoyoubg_gray" >
+
+    <ListView
+        android:id="@+id/lv_contacts"
+        style="@style/layout_match"
+        android:listSelector="@android:color/transparent"
+        android:drawSelectorOnTop="true"
+        >
+
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:background="@color/white"
+	>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/padding_left_right"
+				android:paddingRight="@dimen/padding_left_right"
+				android:background="@color/gray_ea"
+				android:orientation="vertical"
+				>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="10dp" />
+
+				<EditText
+					android:id="@+id/et_join_channel_id"
+					android:singleLine="true"
+					android:inputType="number"
+					android:hint="@string/channelId"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:textSize="@dimen/text_size_small2"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+					android:background="@drawable/shape_et_bg" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="10dp" />
+				<EditText
+					android:id="@+id/et_join_channel_pwd"
+					android:singleLine="true"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:maxLength="4"
+					android:inputType="number"
+					android:textSize="@dimen/text_size_small2"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+					android:hint="@string/channel_pwd"
+					android:background="@drawable/shape_et_bg" />
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="25dp" />
+				<Button
+					android:id="@+id/btn_join_custom_chan"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:layout_gravity="center"
+					android:text="@string/ok"
+					android:textSize="@dimen/text_size_small2"
+					android:textColor="@color/white"
+					android:background="@drawable/selector_btn"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="25dp"/>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone"
+				android:paddingLeft="@dimen/padding_left_right"
+				android:paddingRight="@dimen/padding_left_right" >
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:text="@string/recommand_public_channels"
+					android:textSize="@dimen/text_size_small2"
+					android:textColor="@color/text_gray"
+					android:gravity="center_vertical"
+					/>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/gray_f5"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:gravity="center_vertical">
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/exp_chan"
+						android:textSize="@dimen/text_size_small2"
+						android:textColor="@color/text_black"
+						/>
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"/>
+					<Button
+						android:id="@+id/btn_join_exp_chan"
+						android:layout_width="42dp"
+						android:layout_height="25dp"
+						android:text="@string/join"
+						android:textSize="@dimen/text_size_small3"
+						android:background="@drawable/selector_btn_line"
+						/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/gray_f5"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:gravity="center_vertical" >
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/motor_chan"
+						android:textSize="@dimen/text_size_small2"
+						android:textColor="@color/text_black"
+						/>
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"/>
+					<Button
+						android:id="@+id/btn_join_motor_chan"
+						android:layout_width="42dp"
+						android:layout_height="25dp"
+						android:text="@string/join"
+						android:textSize="@dimen/text_size_small3"
+						android:background="@drawable/selector_btn_line"
+						/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/gray_f5"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:gravity="center_vertical" >
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/ham_chan"
+						android:textSize="@dimen/text_size_small2"
+						android:textColor="@color/text_black"
+						/>
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"/>
+					<Button
+						android:id="@+id/btn_join_ham_chan"
+						android:layout_width="42dp"
+						android:layout_height="25dp"
+						android:text="@string/join"
+						android:textSize="@dimen/text_size_small3"
+						android:background="@drawable/selector_btn_line"
+						/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/gray_f5"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/row_height"
+					android:gravity="center_vertical"
+					>
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/car_chan"
+						android:textSize="@dimen/text_size_small2"
+						android:textColor="@color/text_black"
+						/>
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"/>
+					<Button
+						android:id="@+id/btn_join_car_chan"
+						android:layout_width="42dp"
+						android:layout_height="25dp"
+						android:text="@string/join"
+						android:textSize="@dimen/text_size_small3"
+						android:background="@drawable/selector_btn_line"
+						/>
+				</LinearLayout>
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="@color/gray_f5"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="10dp"/>
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/recommand_channel_warning"
+					android:textSize="@dimen/text_size_small2"
+					android:textColor="@color/app_red"
+					android:gravity="center"
+					/>
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="30dp"
+					android:layout_marginRight="30dp"
+					android:text="@string/recommand_channel_warning_detail"
+					android:textSize="@dimen/text_size_small3"
+					android:textColor="@color/app_red"
+					android:gravity="center"
+					/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="10dp" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout> 

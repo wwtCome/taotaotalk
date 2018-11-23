@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white" >
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/popup_setting"
+				android:background="@drawable/setting_bgd"
+				android:gravity="center_vertical"
+				android:paddingLeft="15dp"
+				android:text="@string/settings"
+				android:textSize="@dimen/text_sizt_contact" />
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/black" />
+
+			<LinearLayout
+				android:id="@+id/ll_float_btn"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:visibility="gone"
+				android:background="@drawable/selector_setting"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:id="@+id/iv_float_btn"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/checkbox_off" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/enable_float_btn"
+					android:textSize="@dimen/text_size_small2" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:visibility="gone"
+				android:background="@color/divider_gray" />
+
+			<LinearLayout
+				android:id="@+id/ll_auto_launch"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:id="@+id/iv_auto_launch"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/checkbox_off" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/enable_auto_launch"
+					android:textSize="@dimen/text_size_small2" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/divider_gray"
+				android:visibility="gone" />
+
+			<LinearLayout
+				android:id="@+id/ll_headset_key"
+				style="@style/BorderlessButton"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:gravity="center_vertical"
+				android:visibility="gone">
+
+				<ImageView
+					android:id="@+id/iv_headset_key"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/checkbox_off" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/support_headset_key"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<ImageView
+					android:id="@+id/iv_headset_help"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/help" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/divider_gray" />
+
+			<LinearLayout
+				android:id="@+id/ll_ptt_key"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/ptt_key" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/ptt_key_def"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<TextView
+					android:id="@+id/tv_ptt_keycode"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="0"
+					android:textColor="@color/gray_90"
+					android:textSize="@dimen/text_size_small3" />
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/arrow_right_yellow" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/divider_gray" />
+
+			<LinearLayout
+				android:id="@+id/ll_notification"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/ic_notif" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/notification"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/arrow_right_yellow" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/divider_gray" />
+
+			<LinearLayout
+				android:id="@+id/ll_language"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/language" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/language"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/arrow_right_yellow" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/ll_record_mode"
+				style="@style/BorderlessButton"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:gravity="center_vertical"
+				android:visibility="gone">
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/prior_mic" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/record_mode"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<TextView
+					android:id="@+id/tv_record_mode"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/process_mode"
+					android:textColor="@color/gray_90"
+					android:textSize="@dimen/text_size_small3" />
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/arrow_right_gray" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/black" />
+
+			<TextView
+				android:id="@+id/setting_tv_ok"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/popup_setting"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center"
+				android:text="@string/ok"
+				android:textSize="@dimen/text_sizt_contact" />
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

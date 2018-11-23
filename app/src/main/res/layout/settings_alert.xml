@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white" >
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/popup_setting"
+				android:background="@drawable/setting_bgd"
+				android:gravity="center_vertical"
+				android:paddingLeft="15dp"
+				android:text="@string/notification"
+				android:textSize="@dimen/text_sizt_contact" />
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/black" />
+
+
+			<LinearLayout
+				android:id="@+id/ll_handmic_alarm"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center_vertical"
+				android:visibility="gone">
+
+				<ImageView
+					android:id="@+id/iv_handmic_alarm"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/checkbox_off" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/handmic_alarm"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<ImageView
+					android:id="@+id/iv_handmic_alarm_help"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/help" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/divider_gray"
+				android:visibility="gone" />
+
+			<LinearLayout
+				android:id="@+id/ll_alert_type"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/alert_type" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/notif_style"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<TextView
+					android:id="@+id/tv_alert_type"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/normal"
+					android:textColor="@color/gray_90"
+					android:textSize="@dimen/text_size_small3" />
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/arrow_right_gray" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/divider_gray" />
+
+			<LinearLayout
+				android:id="@+id/ll_alert_volume"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center_vertical">
+
+				<ImageView
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/volume" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:text="@string/alert_volume"
+					android:textSize="@dimen/text_size_small2" />
+
+				<TextView
+					style="@style/layout_horizontal"
+					android:layout_weight="1" />
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:padding="10dp"
+					android:src="@drawable/arrow_right_gray" />
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/black" />
+
+			<TextView
+				android:id="@+id/notify_tv_ok"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/popup_setting"
+				android:background="@drawable/selector_setting"
+				android:focusable="true"
+				android:gravity="center"
+				android:text="@string/ok"
+				android:textSize="@dimen/text_sizt_contact" />
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"   
+	android:orientation="vertical">
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/popup_setting"
+		android:background="@drawable/setting_bgd"
+		android:gravity="center_vertical"
+		android:paddingLeft="15dp"
+		android:text="@string/ptt_key_def"
+		android:textSize="@dimen/text_sizt_contact" />
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/black" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="10dp" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/press_key"
+		android:textSize="@dimen/text_size_small" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="10dp" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:id="@+id/et_keycode"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/row_height"
+			android:layout_weight="1"
+			android:background="@drawable/shape_et_bg"
+			android:editable="false"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:textSize="@dimen/text_size_small2" />
+
+		<Button
+			android:id="@+id/btn_delete_keycode"
+			android:layout_width="wrap_content"
+			android:layout_height="37dp"
+			android:background="@drawable/selector_setting"
+			android:text="@string/eliminate"
+			android:textSize="@dimen/text_size_small2" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="10dp" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/black"/>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/tv_cancle"
+			android:layout_width="0dp"
+			android:layout_height="35dp"
+			android:layout_weight="1"
+			android:background="@drawable/selector_setting"
+			android:text="@string/cancel"
+			android:gravity="center"/>
+		<TextView
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:background="@color/black"/>
+		<TextView
+			android:id="@+id/tv_ok"
+			android:layout_width="0dp"
+			android:layout_height="35dp"
+			android:layout_weight="1"
+			android:text="@string/ok"
+			android:background="@drawable/selector_setting"
+			android:gravity="center"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_set_ptt_broadcast"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:gravity="right|center_vertical">
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/set_broadcast"
+			android:textSize="@dimen/text_size_small2"
+			android:textColor="@color/gray_90"/>
+		<ImageView
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:src="@drawable/arrow_right_gray"/>
+	</LinearLayout>
+</LinearLayout>
